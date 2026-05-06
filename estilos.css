@@ -87,3 +87,40 @@ font-size: 4rem;
   from, to { border-color: transparent; }
   50% { border-color: white; }
 }
+
+
+
+
+/* --- AJUSTES PARA MOBILE --- */
+@media (max-width: 768px) {
+  
+  /* 1. Achicamos la altura del video/contenedor */
+  .hero {
+    height: 60vh; /* El video ahora ocupa solo el 60% de la pantalla */
+    justify-content: center; /* Centra el bloque de texto horizontalmente */
+    padding-left: 0; /* Eliminamos el desplazamiento que pusimos en desktop */
+  }
+
+  /* 2. Centramos el bloque de contenido */
+  .hero-content {
+    margin-left: 0; /* Quitamos el margen lateral */
+    text-align: center; /* Centra el texto */
+    width: 100%;
+    padding: 0 20px; /* Margen de seguridad para que el texto no toque los bordes */
+  }
+
+  /* 3. Achicamos el tamaño de las fuentes */
+  .titulo-fade {
+    font-size: 2.2rem; /* Título más acorde al tamaño del celular */
+    line-height: 1.1;
+  }
+
+  .subtitulo-tipeo {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    /* En mobile, el efecto de escritura puede ser difícil de leer si es muy largo, 
+       pero con text-align center se mantendrá centrado. */
+  }
+  
+  /* Opcional: Si el video queda muy pequeño, puedes subir el valor de height en .hero */
+}
