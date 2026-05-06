@@ -96,7 +96,7 @@ font-size: 4rem;
   
   /* 1. Achicamos la altura del video/contenedor */
   .hero {
-    height: 60vh; /* El video ahora ocupa solo el 60% de la pantalla */
+    height: 100vh; /* El video ahora ocupa solo el 60% de la pantalla */
     justify-content: center; /* Centra el bloque de texto horizontalmente */
     padding-left: 0; /* Eliminamos el desplazamiento que pusimos en desktop */
   }
